@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC2F5656-6186-4944-8C70-997AD805090F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuickSort</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BADF774F629FDBB9BA9519CAE3C6B5FFBDE30321</key>
+		<string>https://github.com/RexMa88/Quick-Sort.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuickSort.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BADF774F629FDBB9BA9519CAE3C6B5FFBDE30321</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RexMa88/Quick-Sort.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BADF774F629FDBB9BA9519CAE3C6B5FFBDE30321</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BADF774F629FDBB9BA9519CAE3C6B5FFBDE30321</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuickSort</string>
+		</dict>
+	</array>
+</dict>
+</plist>

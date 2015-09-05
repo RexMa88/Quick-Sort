@@ -8,11 +8,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define MAXSIZE 10
+#define NUMOFSIZE 10000
 
 typedef struct{
     int r[MAXSIZE];
+//    int r[NUMOFSIZE];
     int length;
 }SqList;
 
@@ -50,7 +53,22 @@ void Qsort(SqList *L,int low,int high){
 
 
 void QuickSort(SqList *L){
+    
     Qsort(L,1,L->length);
+}
+
+void InsertSort(SqList *L){
+    int i,j;
+    int pivot;
+    for (i = 2; i < L->length; i++) {
+        if (L->r[i] < L->r[i-1]) {
+            pivot = L->r[i];
+            for (j=i-1; L->r[j] > pivot; j--) {
+                L->r[j+1] = L->r[j];
+            }
+            L->r[j+1] = pivot;
+        }
+    }
 }
 
 int main(int argc, const char * argv[]) {
@@ -61,13 +79,28 @@ int main(int argc, const char * argv[]) {
         L->r[i] = rand();
     }
     
-    L->length = 10;
+//    for (int i = 0; i < NUMOFSIZE; i++) {
+//        L->r[i] = rand();
+//    }
     
-    QuickSort(L);
-    
-    for (int i = 1; i <= 10; i++) {
+    L->length = MAXSIZE;
+//    L->length = NUMOFSIZE;
+    clock_t start = clock();
+    if (L->length >= NUMOFSIZE) {
+        QuickSort(L);
+    }else{
+        InsertSort(L);
+    }
+//    QuickSort(L);
+    clock_t finish = clock();
+    printf("The running Time is %f",(double)(finish - start)/CLOCKS_PER_SEC);
+    for (int i = 0; i < 10; i++) {
         printf("%d\n",L->r[i]);
     }
+    
+//    for (int i = 0; i < NUMOFSIZE; i++) {
+//        printf("%d \n",L->r[i]);
+//    }
     
     printf("Hello, World!\n");
     return 0;
